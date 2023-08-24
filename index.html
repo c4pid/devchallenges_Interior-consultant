@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js"></script>
+    <title>Devchallenges</title>
+  </head>
+  <body>
+    <div class="IC-header">
+      <span class="IC-header__logo">This Interior</span>
+      <div class="IC-header__icon" onclick="handleOpenMenu()">
+        <i class="material-icons md-light md-40">menu</i>
+      </div>
+      <div class="IC-header__menu">
+        <a href="#" class="menu-item active" onclick="handleActive(event)"
+          >home</a
+        >
+        <a href="#" class="menu-item" onclick="handleActive(event)"
+          >collection</a
+        >
+        <a href="#" class="menu-item" onclick="handleActive(event)">about</a>
+        <a href="#" class="menu-item" onclick="handleActive(event)">contact</a>
+      </div>
+
+      <div class="IC-header__icon-close" onclick="handleClose(event)">
+        <i class="material-icons md-light md-40">close</i>
+      </div>
+    </div>
+
+    <div class="IC-content">
+      <div class="IC-content__introduce">
+        <h1 class="introduce__title">Modern interior</h1>
+        <p class="introduce__description">
+          A full-Service residential & commercial interior design and staging
+          company offering professional organizing & eco-services.
+        </p>
+
+        <span class="introduce__btn">
+          <h3 class="introduce__btn-text">Read more</h3>
+          <i class="material-icons md-light md-28"> arrow_right_alt </i>
+        </span>
+      </div>
+
+      <div class="IC-content__product">
+        <img src="./photo1.png" alt="phot-1" class="product__img" />
+        <div class="product__author">
+          <div class="author__info">
+            <img src="./photo2.png" alt="avatar" class="info__avatar" />
+            <div class="info__detail">
+              <h4 class="detail__name">Aliza Webber</h4>
+              <h5 class="detail__job-position">Interior designer</h5>
+            </div>
+          </div>
+          <p class="product__info">Designed in 2020 by Aliza Webber</p>
+        </div>
+      </div>
+    </div>
+
+    <h5 class="IC-author">
+      created by
+      <a href="https://github.com/c4pid" class="author__link" target="_blank"
+        >c4pid</a
+      >
+      - devChallenges.io
+    </h5>
+  </body>
+</html>
